@@ -1,5 +1,6 @@
 package com.takahirofujii.condominium;
 
+import java.math.BigDecimal;
 import java.time.YearMonth;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -28,8 +29,11 @@ public class CondominiumDataCreator {
 	}
 	
 	List<CondominiumSales> createSalesData(int numberOfData){
-		List<Condominium> data = new ArrayList<Condominium>();
-		//TODO implement logic
-		return null;
+		List<CondominiumSales> data = new ArrayList<CondominiumSales>();
+		IntStream.range(1,numberOfData + 1)
+		.forEach(i -> data.add(new CondominiumSales(i,
+				YearMonth.now(),
+				BigDecimal.ONE)));
+		return data;
 	}
 }
