@@ -30,10 +30,14 @@ public class CondominiumDataCreator {
 	
 	List<CondominiumSales> createSalesData(int numberOfData){
 		List<CondominiumSales> data = new ArrayList<CondominiumSales>();
-		IntStream.range(1,numberOfData + 1)
-		.forEach(i -> data.add(new CondominiumSales(i,
-				YearMonth.now(),
-				BigDecimal.ONE)));
+		IntStream.range(1,numberOfData + 1).forEach(i -> data.addAll(createOneYearData(i)));
+		return data;
+	}
+	
+	private List<CondominiumSales> createOneYearData(long id){
+		List<CondominiumSales> data = new ArrayList<CondominiumSales>();
+		IntStream.range(0, 12)
+				 .forEach(i -> data.add(new CondominiumSales(id,YearMonth.now().plusMonths(i),BigDecimal.valueOf((int)(Math.random()*1000000)))));
 		return data;
 	}
 }
