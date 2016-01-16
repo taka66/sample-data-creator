@@ -11,4 +11,4 @@ Condominium data pattern has 2 types of data set.
 | sales data   | Condominium has sales data of recent 1 year. |
 
 You can confirm detail api documentation(html) at /target/generated-docs/api-guide.html
-And also latest html is uploaded at [my web site]:http://takahirofujii.com/product/sample-data-creator/0.0.1/api-guide.html .
+And also latest html is uploaded at [my web site](http://takahirofujii.com/product/sample-data-creator/0.0.1/api-guide.html) .
