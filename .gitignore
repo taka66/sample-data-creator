@@ -1,4 +1,5 @@
 /target/
+!/target/generated-docs/*
 .classpath
 .git
 .project

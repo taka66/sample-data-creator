@@ -1,0 +1,88 @@
+= Sample Data Creator API Guide
+Takahiro Fujii;
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 4
+:sectlinks:
+
+[[overview]]
+= Overview
+
+[[overview-http-verbs]]
+== HTTP verbs
+
+RESTful notes tries to adhere as closely as possible to standard HTTP and REST conventions in its
+use of HTTP verbs.
+
+|===
+| Verb | Usage
+
+| `GET`
+| Used to retrieve a resource
+
+| `POST`
+| Used to create a new resource
+
+|===
+
+[[overview-http-status-codes]]
+== HTTP status codes
+
+RESTful notes tries to adhere as closely as possible to standard HTTP and REST conventions in its
+use of HTTP status codes.
+
+|===
+| Status code | Usage
+
+| `200 OK`
+| The request completed successfully
+
+|===
+
+[[Condominium]]
+== Condominium
+
+The condominium provides the sample data of condominium for creating sample application. +
+Currently this api is able to response two types of data.
+
+[[Condominium-get]]
+=== Accessing the data
+
+A `GET` request is used to access the data created randomly.
+
+==== Request structure
+
+include::{snippets}/condominium/request-parameters.adoc[]
+
+==== Example request
+
+include::{snippets}/condominium/curl-request.adoc[]
+
+==== Example response
+
+include::{snippets}/condominium/http-response.adoc[]
+
+
+[[Condominium-get-master]]
+=== Get master data
+
+When you set field parameter as 'master', this api response master data of condominum.
+And this field value is default value.
+
+==== Request structure
+
+include::{snippets}/condominium/request-parameters.adoc[]
+
+==== Response structure
+
+include::{snippets}/condominium/response-fields.adoc[]
+
+==== Example request
+
+include::{snippets}/condominium/curl-request.adoc[]
+
+==== Example response
+
+include::{snippets}/condominium/http-response.adoc[]
