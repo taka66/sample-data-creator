@@ -1,7 +1,7 @@
 # sample-data-creator
 This api create sample data for creating sample application.
 Sample data re-create randomly every time.
-Currently this application support following data pattern.
+Currently this application support only following data pattern.
 
 ## Condominium
 Condominium data pattern has 2 types of data set.
