@@ -1,5 +1,4 @@
 /target/
-!/target/generated-docs/api-guide.html
 .classpath
 .git
 .project
