@@ -1,7 +1,6 @@
 package com.takahirofujii.condominium;
 
 import java.math.BigDecimal;
-import java.time.YearMonth;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -15,6 +14,6 @@ import lombok.Getter;
 @AllArgsConstructor
 public class CondominiumSales {
 	private final long id;
-	private final YearMonth month;
+	private final String month;
 	private final BigDecimal sales;
 }

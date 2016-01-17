@@ -47,7 +47,7 @@ public class CondominiumDataCreator {
 
 	private List<CondominiumSales> createOneYearData(long id) {
 		List<CondominiumSales> data = new ArrayList<CondominiumSales>();
-		IntStream.range(0, 12).forEach(i -> data.add(new CondominiumSales(id, YearMonth.now().minusMonths(i),
+		IntStream.range(0, 12).forEach(i -> data.add(new CondominiumSales(id, YearMonth.now().minusMonths(i).toString(),
 				BigDecimal.valueOf((int) (Math.random() * 1000000)))));
 		return data;
 	}
