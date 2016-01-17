@@ -1,4 +1,6 @@
-/target/
+/target/*
+!/target/generated-docs/
+!/target/*.jar
 .classpath
 .git
 .project
